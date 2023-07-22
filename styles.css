@@ -109,6 +109,11 @@ div.content-details {
 }
 
 /*******MEDIA QUERY*******/
+@media screen and (max-width: 350px) {
+    span {
+        display: inline-block;
+    }
+}
 
 @media screen and (max-width: 500px) {
     main {
@@ -147,5 +152,23 @@ div.content-details {
     }
     div.content-details {
         width: 80%;
+    }
+}
+@media (min-width: 600px) and (max-width: 800px) {
+    main {
+        padding-left: 2rem ;
+    }
+    div#navbar {
+        padding: 2rem 1rem;
+    }
+    div.container {
+    padding: 2rem 1rem;
+    }
+    div.sub-heading {
+        letter-spacing: .1rem;
+        word-spacing: .2rem;
+    }
+    header h1 {
+        font-size: 3.5rem;
     }
 }
