@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+div#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+div.section-links  ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+div.section-links  ul li {
+    list-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+div.section-links  ul span li{
+    color: hsl(231, 7%, 65%);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: hsl(231, 7%, 65%);
+}
+div.hamburger-button {
+    display: none;
+}
+div.container {
+    margin: 1% auto;
+    display: flex;
+    padding: 2rem 0 2rem 5rem;
+}
+div.contents {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+div.sub-heading {
+    letter-spacing: .3rem;
+    font-weight: 500;
+    word-spacing: .5rem;
+}
+div.sub-heading > span {
+    padding: .5rem;
+    color: hsl(207, 33%, 95%);
+    background-color: black;
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+header h1 {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    color: black;
+    font-size: 5rem;
+}
+div.illustration {
+    width: 50%;
+}
+div.illustration > svg {
+    width: 100%;
+}
+div.registration {
+    margin-top: 2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    word-spacing: .25rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+div.registration > span {
+    color: hsl(207, 33%, 95%);
+    padding: 1rem;
+    background-color: hsl(0, 100%, 68%);
+    border-radius: 5px;
+    letter-spacing: normal;
+    transition-duration: 250ms;
+}
+div.registration > span:hover {
+    opacity: 70%;
+}
+div.content-details {
+    text-transform: none;
+    font-weight: 500;
+    width: 40%;
+    line-height: 1.5;
+}
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*******MEDIA QUERY*******/
+
+@media screen and (max-width: 500px) {
+    main {
+        padding-left: 1rem ;
+    }
+    div#navbar {
+        padding: 2rem 0;
+    }
+    div.hamburger-button {
+        display: block;
+        margin-right: 1rem;
+    }
+    div.section-links > ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.container {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0 0 5rem 0;
+        gap: 3rem;
+    }
+    div.illustration {
+        width: 100%;
+    }
+    div.contents {
+        width: 100%;
+    }
+    div.sub-heading {
+        width: 100%;
+        letter-spacing: .2rem;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    div.content-details {
+        width: 80%;
+    }
+}
