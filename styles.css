@@ -34,6 +34,7 @@ div.section-links  ul span li{
 a {
     text-decoration: none;
     color: black;
+
 }
 a:hover {
     text-decoration: underline;
@@ -107,6 +108,9 @@ div.content-details {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+.hide {
+    display: none;
+}
 
 /*******MEDIA QUERY*******/
 @media screen and (max-width: 350px) {
@@ -122,14 +126,26 @@ div.content-details {
     div#navbar {
         padding: 2rem 0;
     }
+    div.section-links {
+        position: relative;
+    }
     div.hamburger-button {
         display: block;
-        margin-right: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* margin-right: 1rem; */
     }
     div.section-links > ul {
-        display: none;
         flex-direction: column;
-        align-items: center;
+        gap: 0;
+        padding: 1rem;
+        margin: 0 2rem;
+        outline: 1px solid black;
+        border-radius: 2px;
+    }
+    li {
+        margin: .5rem o;
     }
     div.container {
         flex-direction: column-reverse;
