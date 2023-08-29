@@ -13,17 +13,16 @@
 </head>
 <body>
   <main>
-    <div id="navbar">
+    <nav id="navbar">
       <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#323334" fill-rule="evenodd"><path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"/></g></svg>
       </div>
-      <div class="section-links">
-        <div class="hamburger-button">
-          <figure>
-            <img class="hamburger"src="./images/icon-hamburger.svg" alt="">
-          </figure>
-        </div>
-        <ul class="nav-links hide">
+      <div class="hamburger">
+        <img src="./images/icon-hamburger.svg" class="hamburger-icon" alt="">
+        <img src="./images/icon-close.svg" class="close-icon hide" alt="">
+      </div>
+      <div class="navigation-menu hide">
+        <ul class="nav-links">
           <a href="#">
             <li>Product</li>
           </a>
@@ -34,8 +33,8 @@
             <li>Pricing</li>
           </a>
           <span>
-            <a href="#">
-              <li>.</li>
+            <a href="#" class="empty-link">
+              <li class="empty-list"></li>
             </a>
           </span>
           <span>
@@ -45,7 +44,7 @@
           </span>
         </ul>
       </div>
-    </div>
+    </nav>
     <div class="container">
       <div class="contents">
         <div class="sub-heading">
@@ -72,6 +71,7 @@
       </p>
     </footer>
   </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
